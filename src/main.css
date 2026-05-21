@@ -1,0 +1,54 @@
+:root {
+    --licorice: rgba(28, 17, 10, 1);
+    --vanilla: rgba(228, 214, 167, 1);
+    --orange-crayola: rgba(255, 119, 51, 1);
+    --rufous: rgba(155, 41, 21, 1);
+    --verdigris: rgba(80, 162, 167, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    height: 100%;
+}
+
+body {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+#root {
+    background-color: var(--verdigris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#todo-list {
+    width: 60%;
+    padding: 20px;
+    background-color: var(--vanilla);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--rufous);
+    border-radius: 15px;
+    border: 2px solid var(--licorice);
+}
+
+.task {
+  background-color: var(--licorice);
+  color: var(--vanilla);
+  height: 60px;
+  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  outline: 2px solid var(--orange-crayola);
+  border-radius: 10px;
+}

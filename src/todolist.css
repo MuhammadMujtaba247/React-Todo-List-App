@@ -1,16 +1,89 @@
-#todo-display {
-    margin: 20px 0;
-    width: 100%;
+#input-div {
+    margin-top: 10px;
+    width: 90%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: grey;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    > button {
+        width: 110px
+    }
 }
 
-.todos {
+
+input {
+    width: 60%;
+    height: 45px;
+    background-color: var(--vanilla);
+    border: 2px solid var(--rufous);
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--licorice);
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: var(--licorice);
+}
+
+input:focus-visible {
+    outline: 2px solid var(--orange-crayola);
+}
+
+button {
+    color: var(--licorice);
+    background-color: var(--orange-crayola);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px;
+    > svg {
+        fill: var(--licorice);
+    }
+}
+
+#todo-display {
+    width: 90%;
     display: flex;
-    background-color: lightgrey;
-    margin: 10px 10px;
-    width: 100%;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+button:hover {
+    background-color: var(--rufous);
+    color: var(--vanilla);
+    transform: scale(1.15);
+    transition: ease 100ms;
+    > svg {
+        fill: var(--vanilla);
+    }
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+
+.check-buttons {
+    background-color: var(--licorice);
+    border: 2px var(--vanilla) solid;
+    > svg {
+        fill: var(--vanilla);
+    }
+}
+
+.checked-check-buttons {
+  background-color: var(--orange-crayola);
+  border: none;
+  > svg {
+    fill: var(--licorice);
+  }
+}
+
+p {
+    text-align: left;
+    width: 70%;
+    font-size: larger;
+    overflow-wrap: break-word;
 }
